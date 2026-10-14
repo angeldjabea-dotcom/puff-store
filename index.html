@@ -6,58 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PUFF STORE</title>
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      background: #101010;
+      background: #100819;
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
     }
-    header {
-      padding: 25px 10px;
-      background: #1b1b1b;
-      border-bottom: 2px solid #b6ff45;
+    header { padding: 22px 12px; }
+    h1 { color: #d66bff; margin: 0; }
+    p { color: #eee; }
+    .poster {
+      display: block;
+      width: 100%;
+      max-width: 650px;
+      height: auto;
+      margin: 0 auto 20px;
+      border-radius: 12px;
     }
-    h1 { color: #b6ff45; }
-    main { padding: 30px 15px; }
-    .card {
-      max-width: 400px;
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 340px;
       margin: 20px auto;
-      padding: 20px;
-      background: #202020;
-      border-radius: 15px;
+      padding: 0 12px;
     }
-    .owner { color: #b6ff45; font-weight: bold; }
-    footer {
-      padding: 25px 10px;
-      color: #aaa;
-      font-size: 13px;
+    .btn {
+      display: block;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background: #8c24d6;
     }
+    .whatsapp { background: #168b48; }
+    section { padding: 20px 12px 40px; }
+    footer { padding: 20px; color: #bbb; font-size: 13px; }
   </style>
 </head>
 <body>
   <header>
     <h1>PUFF STORE</h1>
-    <p>Ta boutique en ligne</p>
+    <p>Bienvenue dans notre boutique</p>
   </header>
 
   <main>
-    <div class="card">
-      <h2>Bienvenue chez PUFF STORE</h2>
-      <p>Notre boutique est en préparation.</p>
-      <p>Catalogue de démonstration uniquement.</p>
+    <img
+      class="poster"
+      src="a_vibrant_high_contrast_commercial_poster_flyer_s.png"
+      alt="Affiche PUFF STORE"
+    >
+
+    <div class="buttons">
+      <a class="btn" href="#informations">Voir les informations</a>
+      <a class="btn whatsapp"
+         href="https://wa.me/237692308228"
+         target="_blank" rel="noopener">
+        Contacter sur WhatsApp
+      </a>
     </div>
 
-    <div class="card">
-      <h3>Propriétaire</h3>
-      <p class="owner">TAGNE DJABEA ANGEL</p>
-    </div>
+    <section id="informations">
+      <h2>PUFF STORE</h2>
+      <p>Contact WhatsApp : +237 6 92 30 82 28</p>
+      <p>Consultez les informations avant toute commande.</p>
+      <p>Vente réservée aux adultes, conformément à la loi applicable.</p>
+    </section>
   </main>
 
-  <footer>
-    PUFF STORE — Cameroun<br>
-    Version de démonstration.
-    Aucun achat ni paiement réel disponible.
-  </footer>
+  <footer>PUFF STORE — Cameroun</footer>
 </body>
 </html>
